@@ -18,7 +18,7 @@
   "num_head_channels":-1,
   "noise_fn":"gauss",
   "channels":3,
-  "mvtec_root_path":"/kaggle/input/mvtec-ad/",
+  "mvtec_root_path":"/kaggle/working/mvtec-ad",
   "visa_root_path":"datasets/VisA_1class/1cls",
   "dagm_root_path":"datasets/dagm",
   "mpdd_root_path":"datasets/mpdd",
