@@ -33,7 +33,7 @@ def pixel_pro(mask,pred):
     pred = np.asarray(pred)
     print(pred.shape)
 
-    max_step = 1000
+     max_step = 1000
     expect_fpr = 0.3  # default 30%
     max_th = pred.max()
     min_th = pred.min()
