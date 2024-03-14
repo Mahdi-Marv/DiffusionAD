@@ -269,7 +269,9 @@ def main():
     dagm_class = ['Class1', 'Class2', 'Class3', 'Class4', 'Class5','Class6', 'Class7', 'Class8', 'Class9', 'Class10']
 
 
-    current_classes = mvtec_classes
+    only_carpet = ['carpet']
+
+    current_classes = only_carpet
 
     class_type = ''
     for sub_class in current_classes:    
