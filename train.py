@@ -316,7 +316,7 @@ def main():
         print(file, args)     
 
         data_len = len(testing_dataset) 
-        training_dataset_loader = DataLoader(training_dataset, batch_size=args['Batch_Size'],shuffle=True,num_workers=8,pin_memory=True,drop_last=True)
+        training_dataset_loader = DataLoader(training_dataset, batch_size=args['Batch_Size'],shuffle=True,num_workers=4,pin_memory=True,drop_last=True)
         test_loader = DataLoader(testing_dataset, batch_size=1,shuffle=False, num_workers=4)
 
         # make arg specific directories
