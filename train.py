@@ -138,7 +138,7 @@ def train(training_dataset_loader, testing_dataset_loader, args, data_len,sub_cl
             train_noise_loss+=noise_loss.item()
             
 
-        if epoch % 10 ==0  and epoch > 0:
+        if epoch % 5 ==0  and epoch > 0:
             train_loss_list.append(round(train_loss,3))
             train_smL1_loss_list.append(round(train_smL1_loss,3))
             train_focal_loss_list.append(round(train_focal_loss,3))
@@ -146,7 +146,7 @@ def train(training_dataset_loader, testing_dataset_loader, args, data_len,sub_cl
             loss_x_list.append(int(epoch))
 
 
-        if (epoch+1) % 50==0 and epoch > 0:
+        if (epoch) % 5 == 0 and epoch > 0:
             temp_image_auroc,temp_pixel_auroc= eval(testing_dataset_loader,args,unet_model,seg_model,data_len,sub_class,device)
             image_auroc_list.append(temp_image_auroc)
             pixel_auroc_list.append(temp_pixel_auroc)
